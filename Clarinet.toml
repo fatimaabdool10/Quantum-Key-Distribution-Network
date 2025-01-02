@@ -1,0 +1,24 @@
+[project]
+name = 'Quantum-Key-Distribution-Network'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.network-governance]
+path = 'contracts/network-governance.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.quantum-key-management]
+path = 'contracts/quantum-key-management.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
