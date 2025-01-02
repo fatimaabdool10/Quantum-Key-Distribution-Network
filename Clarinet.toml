@@ -5,6 +5,11 @@ authors = []
 telemetry = true
 cache_dir = './.cache'
 requirements = []
+[contracts.network-governance]
+path = 'contracts/network-governance.clar'
+clarity_version = 2
+epoch = 2.5
+
 [contracts.quantum-key-management]
 path = 'contracts/quantum-key-management.clar'
 clarity_version = 2
